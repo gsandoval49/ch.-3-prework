@@ -38,4 +38,15 @@ var_dump($a); //int 9
 $a += 5;
 var_dump($a); // int(14);
 
+// SIMPLE MATH - CALCULATING AUDIENCE
+$small = 103;
+$large = 4893;
+$medium = 304;
+
+$nonEngage = $small + $large;
+$totalAudience = $small + $large + $medium;
+
+echo $nonEngage;
+var_dump ($totalAudience);
+
 ?>
