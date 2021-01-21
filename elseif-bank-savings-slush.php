@@ -11,8 +11,11 @@ $balance = 2500;
 $savings = 6000;
 $slush   = 100;
 
+// if less than 1000, do nothing
 if ($balance < 1000) {
   echo "work on where you can, save more & spend less";
+
+// if btwn 1000 and 1499, only deposit into savings
 } elseif ($balance < 1500) {
   echo "good work, but room for improvement" . "<br>";
   // amount of 10% of balance and deposit into savings
@@ -22,6 +25,8 @@ if ($balance < 1000) {
   // this is new savings amount after deposit
   $newSavings = $savings + $depositSavings;
   echo "new savings balance SB: $newSavings" . "<br>";
+
+// if over 1500, deposit into both savings & slush fund
 } else {
   echo "great job! increase savings & slush fund this month" . "<br>";
   // 10% of balance into savings
@@ -34,7 +39,7 @@ if ($balance < 1000) {
   $depositSlush = $balance * .05;
   echo "deposit amt into slush fund: $depositSlush" . "<br>";
   $newSlush = $slush + $depositSlush;
-  echo "new slush fund amt: $newSlush" . "<br>";
+  echo "new slush fund amount: $newSlush" . "<br>";
 }
 
 ?>
