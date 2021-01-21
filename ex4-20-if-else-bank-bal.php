@@ -2,8 +2,8 @@
 /**
  *
  */
-$bankBalance = 200;
-$savings     = 100;
+$bankBalance = 10000;
+$savings     = 1000;
 
   if ($bankBalance < 100)
   {
