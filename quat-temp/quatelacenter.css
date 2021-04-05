@@ -1,0 +1,173 @@
+/* ---------------------------------- */
+/* vvvvv Colors, Images & Fonts vvvvv */
+
+:root {
+	--main-bg-color: #f2f0e9;
+	--main-fg-color: #434343;
+	--secondary-bg-color: #523528 ;
+	--secondary-fg-color: #ffffff ;
+	--headers-color: #8e0300;
+	--navigation-color: #696969;
+	--main-font: 'Lato', sans-serif;
+	--secondary-font: 'Open Sans', sans-serif;
+}
+
+body {
+	font-family: var(--main-font);
+	color: var(--main-fg-color);
+	background-color: var(--main-bg-color);
+        font-size: 17px
+}
+
+h1 {
+	text-transform: uppercase;
+
+}
+
+h2 {
+	font-family: var(--secondary-font);
+	color: var(--headers-color);
+}
+
+/* Normalize fuse link styling */
+a, a:hover {
+	color: inherit;
+	font-weight: inherit;
+	text-decoration: inherit;
+}
+
+.telephone {
+        color: #f2d88b;
+}
+
+.header {
+        background-color: var(--secondary-bg-color);
+}
+
+.brown-bar {
+        background-color: #584339;
+        padding: 7px;
+	color: #f2f0e9;
+        padding-left: 15px;
+
+}
+
+.navigation {
+	color: var(--secondary-fg-color);
+	font-size: 17px;
+	font-weight: 500;
+        text-align: center;
+}
+
+
+.navigation a:hover {
+	color: #f2d88b;
+}
+
+.logo-wrapper {
+    background: url(quatela-banner-spa.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#part_gc_headline, #part_ar_headline, #fine_print_headline, #part_email_subscribe {
+}
+
+#part_gc_headline h1, #part_ar_headline h1, #fine_print_headline h1, #part_email_subscribe h1 {
+}
+
+#footer {
+	color: var(--secondary-fg-color);
+	background-color: var(--secondary-bg-color);
+}
+
+/* ^^^^^ Colors, Images & Fonts ^^^^^ */
+/* ---------------------------------- */
+/* vvvvv Layout                 vvvvv */
+
+#wrapper {
+	margin: auto;
+	max-width: unset;
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+a.telephone {
+    padding-left: 10px;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    padding: 0 3%;
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    padding: 0 25px;
+    margin: 0 auto;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+    height: 218px;
+}
+
+.logo-wrapper img {
+	max-width: 250px;
+}
+
+.logo-wrapper a {
+    display: block;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.navigation a {
+	height: 100%;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 4px;
+	text-transform: uppercase;
+}
+
+.navigation a:hover {
+	margin-bottom: 0;
+}
+
+#content_in {
+	max-width: 980px;
+	margin: auto;
+	padding: 0 2% 4% 2%;
+}
+
+#part_gc_headline, #part_ar_headline, #fine_print_headline, #part_email_subscribe {
+        padding-top: 25px;
+}
+
+#part_gc_headline h1, #part_ar_headline h1, #fine_print_headline h1, #part_email_subscribe h1 {
+}
+
+#footer {
+	padding: 3%;
+}
